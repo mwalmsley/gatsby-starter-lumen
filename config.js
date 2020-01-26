@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://walmsley.dev',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
+  title: 'Blog by Mike Walmsley',
   subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  copyright: '© Mike Walmsley All rights reserved.',
+  disqusShortname: 'walmsley',
+  postsPerPage: 6,
+  googleAnalyticsId: 'UA-111766463-3',
   useKatex: false,
   menu: [
     {
@@ -25,19 +25,19 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Mike Walmsley',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'I like solving interesting problems with data. Currently using deep learning to understand galaxy evolution.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'mike.walmsley@physics.ox.ac.uk',
+      facebook: '',
+      telegram: '',
+      twitter: 'www.twitter.com/mike_w_ai',
+      github: 'www.github.com/mwalmsley',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'https://www.linkedin.com/in/m1kewalmsley/',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
