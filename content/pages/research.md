@@ -3,7 +3,7 @@ title: "Research"
 template: "page"
 ---
 
-I try to solve scientific problems with machine learning. Much of my work has been on combining machine learning and crowdsourcing to do better science than with either alone. Read more on [this blog post]().
+I try to solve scientific problems with machine learning. Much of my work has been on combining machine learning and crowdsourcing to do better science than with either alone. Read more on [this blog post](/posts/scaling-galaxy-zoo).
 
 Whatever I work on, I find these principles helpful.
 
