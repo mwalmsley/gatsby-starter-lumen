@@ -3,8 +3,8 @@
 module.exports = {
   url: 'https://walmsley.dev',
   pathPrefix: '/',
-  title: 'Blog by Mike Walmsley',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Mike Walmsley',
+  subtitle: 'Solving intersting problems with data',
   copyright: '© Mike Walmsley All rights reserved.',
   disqusShortname: 'walmsley',
   postsPerPage: 6,
@@ -14,6 +14,10 @@ module.exports = {
     {
       label: 'Articles',
       path: '/'
+    },
+    {
+      label: 'Research',
+      path: '/pages/research'
     },
     {
       label: 'About me',

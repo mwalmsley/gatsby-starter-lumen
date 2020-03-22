@@ -1,9 +1,9 @@
 ---
-template: post
 title: GCR; Permission Denied - Unable to Determine Upload Size
-slug: /posts/gcr_permission_denied_upload_size/
-draft: False
 date: '2019-09-22T23:46:37.121Z'
+template: post
+slug: gcr-permission-denied-upload-size
+draft: False
 description: >-
     Why this error happens and how to fix it
 category: cloud
