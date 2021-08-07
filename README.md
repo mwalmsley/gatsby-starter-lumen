@@ -96,7 +96,7 @@ yarn deploy
 
 #### Access Locally
 ```
-$ yarn
+$ yarn install
 $ yarn develop
 ```
 

@@ -18,4 +18,4 @@ Much CS research focuses on showing state-of-the-art (SOTA) results on carefully
 However, as scientists, we require our methods to work reliably on real data. Real data is often very different to common benchmarks (highly uncertain, heteroskedastic, imbalanced, etc.) and so models that do well on benchmarks often fail in practice.
 Collaborating with CS researchers to understand and tailor our methods is obviously helpful.
 More broadly, I try to break free of the SOTA paper mentality and do what works. 
-I like to build systems that mix complementary models, include post-hoc calibration, and (hopefully) perform greater than the sum of their parts.
+I aim to build systems that (hopefully) perform greater than the sum of their parts.
