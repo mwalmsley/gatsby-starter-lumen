@@ -24,14 +24,21 @@ Representations have recently become really important in the natural language (N
 
 Could such an approach work for astronomy? Self-supervised methods have made huge progress in the last year (see e.g. simCLR). That said, self-supervised methods (and unsupervised methods more broadly) are not informed by human labels and thus might learn representations that are not as scientifically meaningful as supervised methods. 
 
+<figure class="alignleft is-resized">
+  <img src="https://galaxyzooblog.files.wordpress.com/2021/10/screenshot-2021-10-21-at-14.23.38.png?w=1024" alt="" class="wp-image-9572" width="456"/>
+  <figcaption>Schematic of our approach. By training to answer all the diverse Galaxy Zoo questions, our models learn a general representation that is useful for tasks on which the model was never trained.
+  </figcaption>
+</figure>
+
+
 In my paper, I show that we can train excellent galaxy representations using a supervised approach. The key is Galaxy Zoo. Because the GZ questions are very broad, and my models have to learn to answer all those questions with the same representation, they end up learning a general representation that is useful for new tasks on which the model was never trained. 
 
 This is much like how ImageNet pretraining is helpful for other terrestrial tasks because ImageNet is so broad. Pretraining on a broad galaxy task, however, works much better than a broad terrestrial task. I test this by trying to find ring galaxies using networks pretrained on GZ, pretrained on ImageNet, or trained from scratch. The GZ-pretrained network performs best. Interestingly, finetuning layers below the head is much less important than for the ImageNet-pretrained network, exactly as expected if the GZ representation is more useful.
 
 
 <figure class="alignleft is-resized">
-  <img src="https://galaxyzooblog.files.wordpress.com/2021/10/loss_by_rings-1.png?w=1024" alt="" class="wp-image-9572" width="456" height="319"/>
-  <figcaption>Galaxies/day required to keep pace with upcoming surveys now, by 2019 year-end, and by 2022 year-end. Estimates from internal science plan.
+  <img src="https://galaxyzooblog.files.wordpress.com/2021/10/loss_by_rings-1.png?w=1024" alt="" class="wp-image-9572" width="456"/>
+  <figcaption>When fine-tuning to find ring galaxies, it is much more effective to pretrain on Galaxy Zoo (blue) than ImageNet (orange, purple) or train from scratch (black dashed). This is because the Galaxy Zoo representation is already useful to find rings, and likely other kinds of galaxies as well.
   </figcaption>
 </figure>
 
