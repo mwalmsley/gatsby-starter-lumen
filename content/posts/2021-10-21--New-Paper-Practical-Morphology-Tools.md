@@ -1,6 +1,6 @@
 ---
 template: post
-title: Paper: Practical Galaxy Morphology Tools
+title: Practical Galaxy Morphology Tools
 slug: practical-galaxy-tools
 draft: False
 date: '2021-10-21T23:46:37.121Z'
