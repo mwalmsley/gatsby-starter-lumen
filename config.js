@@ -36,7 +36,7 @@ module.exports = {
       email: 'michael.walmsley@manchester.ac.uk',
       facebook: '',
       telegram: '',
-      twitter: 'mike_w_ai',
+      twitter: 'mike_walmsley_',
       github: 'mwalmsley',
       rss: '',
       vkontakte: '',
