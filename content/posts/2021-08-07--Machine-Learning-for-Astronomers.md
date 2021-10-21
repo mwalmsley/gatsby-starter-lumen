@@ -2,7 +2,7 @@
 template: post
 title: Getting Started with Deep Learning for Astronomers
 slug: deep-learning-for-astro
-draft: True
+draft: False
 date: '2021-08-07T12:46:37.121Z'
 description: >-
     How to start using deep learning for useful science
@@ -28,17 +28,20 @@ tags:
 
 The good news is that there are thousands of websites to learn from. The bad news is that there thousands of websites to learn from. Turns out, [anyone can make one](walmsley.dev). 
 
-Stochastic gradient descent
+Books (remember them?) are surprisingly helpful. I suggest
+[www.deeplearningbook.org](www.deeplearningbook.org). It's written by the inventor of GANs and strikes a good balance between words and math.
 
 ## What can I ignore at first?
 
+Many blogs tell you all the things you need to learn. I found this overwhelming. Let me instead tell you what not to learn.
+
 The big thing to ignore is math. You've made it through a Physics degree (probably) and that puts you ahead of most folks trying to pick up deep learning. You have all the rusty tools you need to get the basic math.
 
-You should learn the idea of backpropogation (calculating first derivatives at each layer, then combining them with the chain rule ) but you don't have to work through the equations - that's what software is for. You should be able to explain to your supervisor how layers work (try at your own risk) but you don't need to write out the operations with Einstein notation.  You don't need to brush up on linear algebra (phew). 
+You should learn the *idea* of backpropogation (calculating first derivatives at each layer, then combining them with the chain rule ) but you don't have to work through the equations - that's what software is for. You should be able to explain to your supervisor how layers work (try at your own risk) but you don't need to write out the operations with Einstein notation.  You don't need to brush up on linear algebra (phew). 
 
 Math is foundational and, like all foundations, is best left buried until an extension is needed.
 
-The other big thing to ignore is deployment. Much of the online wisdom is written by engineers, for engineers.  They  want machine learning pipelines running on multiple GPUs, on the cloud, on Kubernetes, on microcontrollers, in the browser, inside your phone and [behind your eyes](). You need it to run on your laptop first. Most astronomers will probably never need it to run anywhere else.
+The other big thing to ignore is deployment. Much of the online wisdom is written by engineers, for engineers.  They  want machine learning pipelines running on multiple GPUs, on the cloud, on Kubernetes, on microcontrollers, in the browser, inside your phone and behind your eyes. You need it to run on your laptop first. Most astronomers will probably never need it to run anywhere else.
 
 This brings me to:
 
@@ -66,10 +69,11 @@ In short, train smart not hard.
 
 **Borrow one**.
 
+Google has an excellent free resource called Collab. It is essentially Jupyter Notebook, but running on Google Cloud hardware instead of your computer. You launch a notebook, install the packages you want, off you go. The awkward part is moving data into the cloud so you can use it. One option is using GDrive. GDrive costs £2/month for 100GB and, since it's also hosted by Google, can be instantly attached to your notebook.
+
 **Rent one**.
 
-
-
+AWS and GCP will both rent you GPUs. They are quite cheap - around $0.40 an hour for "Spot" (i.e. may, rarely, be turned off at any time) reservations. However, you will also need to pay to store your data and probably your environment. This can add up over time and, if you aren't using the GPUs very much, might well cost more than the GPUs themselves. It's also the most complicated option to set up. If you want to go on and work in industry as a cloud engineer, it's a great CV building option, but for a quick project I would avoid it if possible.
 ## Which package should I use?
 
 It doesn't matter.
@@ -112,13 +116,15 @@ PyTorch, on the other hand, requires two tutorials to show you how to [define](h
     trainer.fit(model, train_loader)
     preds = model.predict(train_loader)
 
+Ultimately, the most important difference is what your collaborators use.
+Sharing tips and debugging help is crucial and much easier if you all use the same framework. 
+
+If you are still not sure - use PyTorch. It's slightly more popular among computer scientists and so has slightly more of the latest and greatest models.
+Now stop worrying about it and go do some science.
 
 
 
-
-
-
-tf.data.Dataset and tf.keras
+<!-- tf.data.Dataset and tf.keras
 
 TensorFlow used to be tf.add(a, b) and it . 
 
@@ -140,4 +146,4 @@ Tensorflow used to be a
 
 an originally-independent API for building models that TensorFlow liked so much they [ate it]():
 
-*Shoutout  to...
+*Shoutout  to... -->
