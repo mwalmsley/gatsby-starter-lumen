@@ -24,6 +24,14 @@ tags:
 
 ## What are you trying to do?
 
+It is tempting to take the latest, fanciest model design you can find on [paperswithcode](www.paperswithcode.com) and throw it at your problem.
+If you are doing "CV-driven research", with the aim of moving into industry or just riding the deep learning hype, that's a perfectly fair approach - just be honest with your collaborators about what you're trying to achieve.
+However, if you're trying to do good science, this will cause two headaches. First, fancy models have drawbacks; more code and more parameters make them generally slow, data-hungry, and hard to debug. Second, your paper will quickly be superceded by the next person using the inevitable slightly-fancier model.
+
+A better strategy is to think carefully about what makes your problem hard, and then search for an approach that targets the hard parts. Maybe you are classifying faint tidal features in galaxy images, and so clever preprocessing might help. Maybe you have very little labelled data, and so you might look for ways to learn from unlabelled data or to intelligently choose which data to go out and label. Maybe the physics of the problem involves some symmetries or rules you can bake into your model. Some challenges will be unique to your astronomical context and this might be an opportunity to do some novel computer science research. When your method follows from your problem, your models will work better and your paper will stand out as thoughtful and original.
+
+Most importantly, stay focused on the science question. The most common audience response at machine-learning-in-astro conference tracks is "So what?". You have to be able to say what your method will be able to tell us about the universe. Even if you don't have a single specific science question - perhaps you're aiming to make an automated catalog or optimize a telescope schedule - you should be clear on how those outcomes will support other people's science. This is the difference between making an impact in your field and spending a year carefully solving the wrong problem.
+
 ## What can I read?
 
 The good news is that there are thousands of websites to learn from. The bad news is that there thousands of websites to learn from. Turns out, [anyone can make one](walmsley.dev). 
