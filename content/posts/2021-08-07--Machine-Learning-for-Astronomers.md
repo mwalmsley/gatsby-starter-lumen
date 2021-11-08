@@ -24,7 +24,7 @@ tags:
 
 ## What are you trying to do?
 
-It is tempting to take the latest, fanciest model design you can find on [paperswithcode](www.paperswithcode.com) and throw it at your problem.
+It is tempting to take the latest, fanciest model design you can find on [paperswithcode](http://www.paperswithcode.com) and throw it at your problem.
 If you are doing "CV-driven research", with the aim of moving into industry or just riding the deep learning hype, that's a perfectly fair approach - just be honest with your collaborators about what you're trying to achieve.
 However, if you're trying to do good science, this will cause two headaches. First, fancy models have drawbacks; more code and more parameters make them generally slow, data-hungry, and hard to debug. Second, your paper will quickly be superceded by the next person using the inevitable slightly-fancier model.
 
@@ -34,10 +34,10 @@ Most importantly, stay focused on the science question. The most common audience
 
 ## What can I read?
 
-The good news is that there are thousands of websites to learn from. The bad news is that there thousands of websites to learn from. Turns out, [anyone can make one](walmsley.dev). 
+The good news is that there are thousands of websites to learn from. The bad news is that there thousands of websites to learn from. Turns out, [anyone can make one](https://walmsley.dev). 
 
 Books (remember them?) are surprisingly helpful. I suggest
-[www.deeplearningbook.org](www.deeplearningbook.org). It's written by the inventor of GANs and strikes a good balance between words and math.
+[www.deeplearningbook.org](http://www.deeplearningbook.org). It's written by the inventor of GANs and strikes a good balance between words and math.
 
 ## What can I ignore at first?
 
@@ -64,7 +64,7 @@ GPUs are unquestionably useful in shortening the cycle. Switching from a standar
 - Solving the right problem in the first place (see above)
 - Using a "dummy" model to check your data pipeline and metrics
 - Training for one epoch to make sure your model doesn't break
-- Using live logging like [TensorBoard]() to monitor your model and cancel training if it's going nowhere
+- Using live logging like [TensorBoard](https://www.tensorflow.org/tensorboard) to monitor your model and cancel training if it's going nowhere
 - Using "early stopping", where training is cancelled if a model fails to improve over a set number of epochs, similarly
 
 In short, train smart not hard.
