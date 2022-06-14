@@ -3,7 +3,14 @@ title: "Research"
 template: "page"
 ---
 
-I try to solve scientific problems with machine learning. Much of my work has been on combining machine learning and crowdsourcing to do better science than with either alone. Read more on [this blog post](/posts/scaling-galaxy-zoo).
+## Overview
+
+I try to solve scientific problems with machine learning. Much of my work has been on combining machine learning and crowdsourcing to do better science than with either alone. 
+For example, check out this article I wrote for the [TensorFlow blog](https://blog.tensorflow.org/2020/05/galaxy-zoo-classifying-galaxies-with-crowdsourcing-and-active-learning.html).
+
+You can see my published research on [ORCID](https://orcid.org/0000-0002-6408-4181) and [Google Scholar](https://scholar.google.co.uk/citations?user=mfQ57x8AAAAJ&hl=en). I also have three accepted ICML'22 workshop papers to be presented shortly.
+
+## Principles
 
 Whatever I work on, I find these principles helpful.
 
