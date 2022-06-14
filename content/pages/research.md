@@ -15,11 +15,11 @@ You can see my published research on [ORCID](https://orcid.org/0000-0002-6408-41
 Whatever I work on, I find these principles helpful.
 
 
-#### Embrace Uncertainty
+### Embrace Uncertainty
 
 Science demands quantified uncertainty, on both our measurements and our predictions. Unfortunately, most machine learning methods don't deal well with uncertainty. Deep neural networks tend to be overconfident, for example, which prevents scientists from relying on them. But Bayesian deep learning can help mitigate this. And once we have trustworthy uncertainties, we can use them to do cool stuff like active learning.
 
-#### Design Systems, not SOTA
+### Design Systems, not SOTA
 
 Much CS research focuses on showing state-of-the-art (SOTA) results on carefully constructed benchmarks.
 However, as scientists, we require our methods to work reliably on real data. Real data is often very different to common benchmarks (highly uncertain, heteroskedastic, imbalanced, etc.) and so models that do well on benchmarks often fail in practice.
