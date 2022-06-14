@@ -10,6 +10,8 @@ For example, check out this article I wrote for the [TensorFlow blog](https://bl
 
 You can see my published research on [ORCID](https://orcid.org/0000-0002-6408-4181) and [Google Scholar](https://scholar.google.co.uk/citations?user=mfQ57x8AAAAJ&hl=en). I also have three accepted ICML'22 workshop papers to be presented shortly.
 
+I am grateful to have been awarded funding by Meta (co-lead, "AI-assisted Soft Segmentation of Distant Galaxies by Citizen Scientists"), the Software Sustainability Institute ([Fellow](https://www.software.ac.uk/about/fellows/mike-walmsley) '22), and the Alan Turing Institute (Postdoctoral Enrichment Scheme '22).
+
 ## Principles
 
 Whatever I work on, I find these principles helpful.
