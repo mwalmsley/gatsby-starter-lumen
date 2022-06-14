@@ -45,6 +45,9 @@
 https://www.gatsbyjs.org/docs/gatsby-on-linux/
 https://www.gatsbyjs.org/docs/quick-start
 
+Use nvm to install node, yarn
+https://github.com/nvm-sh/nvm
+
 
 
 #### Create a Gatsby site
