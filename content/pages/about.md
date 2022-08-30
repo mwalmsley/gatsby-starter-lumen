@@ -11,7 +11,4 @@ I did my DPhil at Oxford (Christ Church), where I developed a state-of-the-art a
 
 Previously, I worked at fintech startup Cytora using machine learning and messy open data to price insurance. And way back when, I studied Theoretical Physics MPhys (5 years) at the University of Edinburgh.
 
----
-**Would you like help with a COVID-19 project? Just ask!**
-
----
+You can contact me [here](/pages/contact).
