@@ -1,0 +1,62 @@
+---
+template: post
+title: Towards Galaxy Foundation Models
+slug: galaxy-foundation-models
+draft: False
+date: '2022-06-26T23:46:37.121Z'
+description: >-
+    Adaptable models through broad pretraining and contrastive learning
+category: research
+tags:
+  - deep learning
+  - galaxies
+  - galaxy zoo
+  - paper
+---
+
+*This blog is a summary of my ICML Machine Learning for Astrophysics paper “[Towards Galaxy Foundation Models with Hybrid Contrastive Learning](https://arxiv.org/abs/2206.11927)”.*
+
+Computer science is coming to terms with a result that's both exciting and tragic.
+For nearly any task, training a model directly on that task works less well than finetuning some existing large model that was pretrained on a huge and diverse dataset. These models are (controversially) called [foundation models](https://arxiv.org/abs/2108.07258).
+
+This is exciting because we can build better models than before - models which are not only more accurate but also more robust. It's tragic because it risks entrenching well-resourced labs as the highly-paid gatekeepers of those models. But first let's consider what this means for you.
+
+My impression of our field is that many extragalactic astronomers:
+
+- Have a specific galaxy morphology question **not answered by GZ's questions**  (e.g. finding a rare galaxy type)
+- Have 100-10,000 expert-labelled galaxies where the answer is known
+- Want to solve the problem with deep learning (for effectiveness and for hype/career impact) but are not DL experts
+
+Foundation models are perfect for this. Thanks to pretraining, they can be adapted to new tasks using very little data. **I want to create foundation models for galaxies using Galaxy Zoo**.
+
+<figure class="alignleft is-resized">
+  <img src="https://galaxyzooblog.files.wordpress.com/2022/06/screenshot-2022-06-27-at-06-31-57-cvpr-2022-fgvc9.png?w=1024" alt="" class="wp-image-9572" width="456"/>
+  <figcaption>
+  Finetuning pretrained "foundation" models can answer new questions with minimal data. These ring galaxies were found by finetuning Zoobot, a CNN pretrained on those questions, with ~200 examples of rings.
+  </figcaption>
+</figure>
+
+I previously open-sourced [Zoobot](www.github.com/mwalmsley/zoobot) - a CNN pretrained to solve every GZ DECaLS DR5 question. My tests showed that adapting Zoobot worked better than adapting from ImageNet or training the same model directly.
+
+This new paper takes the same idea and scales it up. I make two key changes:
+
+1. More labels: I train on **four separate Galaxy Zoo campaigns**, with nearly 100M human clicks between them.
+2. More images: I use contrastive learning to benefit from **1.3M images that haven't been labelled by humans**.
+
+Training on different Galaxy Zoo campaigns is tricky because the questions and answers are different between campaigns and images are usually only labelled in a single campaign. So what should the model predict? Happily, the Dirichlet loss function I introduced in [GZ DECaLS](https://arxiv.org/abs/2102.08414) can handle this naturally. The loss essentially measures $p(k|w, N)$ i.e. the odds of $k$ out of $N$ volunteers giving some answer to some question and for some deep learning model $w$. But when $N$ is 0, $p(k=0|N=0, w) = 1$ and so the w doesn't affect the loss - hence unanswered questions have no effect on training. It's therefore easy to learn from galaxies with only a few answered questions: **if the question is not answered, the model simply ignores it**.
+
+To train on totally unlabelled images - where no questions in any GZ campaign have been answered - I used the contrastive learning framework Bootstrap Your Own Latent ([BYOL](https://arxiv.org/abs/2006.07733)). This essentially presents two randomly-augmented versions of the same image to two networks, and asks one network to predict the internal representation of the other network. Because they see differently-augmented images, the representations of both must be invariant to those augmentations, which provides a learning signal. But **BYOL is unsupervised**, and I want to benefit from both unlabelled and labelled images. I did this by **adding a supervised prediction head to one of BYOL's networks**, forcing it to both predict the representation of another network **and** solve the supervised Dirichlet loss task at the same time.
+
+
+<figure class="alignleft is-resized">
+  <img src="https://galaxyzooblog.files.wordpress.com/2022/06/screenshot-2022-06-26-at-23-23-52-cvpr-2022-fgvc9.png?w=1024" alt="" class="wp-image-9572" width="456"/>
+  <figcaption>Adding a new supervised head (top) to BYOL (Grill 2020) helps guide the otherwise-unsupervised method to solve downstream tasks astronomers care about.
+  </figcaption>
+</figure>
+
+
+Making these two changes creates a model which substantially outperforms both direct training and pretraining, for the specific task of finding ring galaxies given scarce labels. 
+
+Historically, Galaxy Zoo has shared catalogs of vote counts for questions we hoped would be generally useful to many people. Choosing these questions is a compromise between scientific precision, broad applicability, and limited volunteer time. Now we no longer need to compromise. I believe Galaxy Zoo can shift towards **creating adaptable foundation models that you can use to answer exactly the questions you care about**.
+
+I'd love to test this on more than just ring galaxies. If you have a small expert-labelled dataset centered on a specific question, please reach out ([email](emailto:michael.walmsley@manchester.ac.uk), [twitter](https://www.twitter.com/mike_walmsley_)).
