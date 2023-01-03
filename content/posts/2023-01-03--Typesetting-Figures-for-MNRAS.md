@@ -12,7 +12,7 @@ tags:
   - fonts
 ---
 
-Figures look best when they match the style of the document. How can you make ``matplotlib`` figures that match the style of journal paper?
+Figures look best when they match the style of the document. How can you make matplotlib figures that match the style of journal paper?
 
 I mostly publish in MNRAS, so I'll use that as an example, but this approach should work for any latex paper format (ApJ, NeurIPS, etc.).
 
@@ -22,11 +22,12 @@ There's two parts that need adjusting:
 
 
 <figure class="alignleft is-resized">
-  <img src="https://walmsley.dev/matched.png" alt="" class="wp-image-9572" width="300"/>
-  <img src="https://walmsley.dev/unmatched.png" alt="" class="wp-image-9572" width="300"/>
-  <figcaption>
+  <img src="https://walmsley.dev/unmatched.png" alt="" class="wp-image-9572" width="456"/>
+  <br>
+  <img src="https://walmsley.dev/matched.png" alt="" class="wp-image-9572" width="456"/>
+  <!-- <figcaption>
   The same figure, before and after changing matplotlib's settings to match the journal style.
-  </figcaption>
+  </figcaption> -->
 </figure>
 
 
@@ -34,7 +35,7 @@ There's two parts that need adjusting:
 
 The first and most important step is setting the right figure size. Everything else follows.
 
-The default ``matplotlib`` figure size is [6.4 by 4.8 inches](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html). To fit in a two column paper format, figures need to be about half that default size. I used to resize the final figure image with ``[width=\columnwidth]``. But this makes *everything* proportionally smaller - the text, the line widths, etc. I think this is why a lot of student reports (including mine) have borderline-unreadable figures.
+The default matplotlib figure size is [6.4 by 4.8 inches](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html). To fit in a two column paper format, figures need to be about half that default size. I used to resize the final figure image with ``[width=\columnwidth]``. But this makes *everything* proportionally smaller - the text, the line widths, etc. I think this is why a lot of student reports (including mine) have borderline-unreadable figures.
 
 Instead, **make the figure the correct size in the first place**. You can do this by trial and error, but it's easiest if you know the actual width required. You can check this in LaTeX with `\the\columnwidth` ([StackOverflow](https://tex.stackexchange.com/a/407373)).
 
