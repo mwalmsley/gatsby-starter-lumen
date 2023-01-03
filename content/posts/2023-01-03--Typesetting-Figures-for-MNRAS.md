@@ -22,8 +22,8 @@ There's two parts that need adjusting:
 
 
 <figure class="alignleft is-resized">
-  <img src="static/matched.png" alt="" class="wp-image-9572" width="300"/>
-  <img src="static/unmatched.png" alt="" class="wp-image-9572" width="300"/>
+  <img src="https://walmsley.dev/matched.png" alt="" class="wp-image-9572" width="300"/>
+  <img src="https://walmsley.dev/unmatched.png" alt="" class="wp-image-9572" width="300"/>
   <figcaption>
   The same figure, before and after changing matplotlib's settings to match the journal style.
   </figcaption>
