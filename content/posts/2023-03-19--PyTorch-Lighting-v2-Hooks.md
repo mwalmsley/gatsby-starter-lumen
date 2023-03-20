@@ -12,9 +12,9 @@ tags:
   - guide
 ---
 
-PyTorch Lightning v2.0 has made two major changes to `pl.LightningModule` methods:
+PyTorch Lightning v2.0 has made two major changes to `pl.LightningModule` methods.
 
-`training_epoch_end(outputs)` methods have been removed in favor of `on_training_epoch_end()`.
+First, `training_epoch_end(outputs)` methods have been removed in favor of `on_training_epoch_end()`.
 
 Notice how the `_on` function is not quite the same: the `outputs` argument has been removed, requiring users to explicitly store outputs as a `self.` property. The [release notes](https://github.com/Lightning-AI/lightning/releases/tag/2.0.0) have a good example:
 
