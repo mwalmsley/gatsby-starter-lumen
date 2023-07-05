@@ -26,6 +26,10 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/pages/contacts'
+    },
+    {
+      label: 'Postdoc ad',
+      path: '/pages/postdoc'
     }
   ],
   author: {
