@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://walmsley.dev',
   pathPrefix: '/',
   title: 'Mike Walmsley',
-  subtitle: 'Solving intersting problems with data',
+  subtitle: 'Solving interesting problems with data',
   copyright: '© Mike Walmsley All rights reserved.',
   disqusShortname: 'walmsley',
   postsPerPage: 6,
