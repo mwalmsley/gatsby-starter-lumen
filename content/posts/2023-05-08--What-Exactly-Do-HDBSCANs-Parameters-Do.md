@@ -14,7 +14,7 @@ tags:
 
 The HDBSCAN docs have an excellent high-level overview of how the algorithm works. But they don't explain exactly how the HDSCAN code parameters fit in. This is my best effort at working that out.
 
-  min_points
+### min_points
 
 HDBSCAN constructs a graph linking all nearby points (single linkage tree). But we don't want to accidentally link two clusters with a single random noise point halfway between. To avoid this, we should try to move noise points further away from other points. That's done by defining a new distance measure - the mutual reachability distance.
 
@@ -35,7 +35,7 @@ Points are considered noise once the distance (edge weight) being dropped from t
 
 core distance (self-loop) can't be longer than MRD to any other points in the MST. If it has a single nearby point, MRD to that point is the core distance (greater than small actual distance) -->
 
-  min_cluster_size
+### min_cluster_size
 
 This is a bit more intuitive, thankfully.
 
