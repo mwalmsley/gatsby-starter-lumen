@@ -3,16 +3,16 @@ title: "Postdoc opportunity - work with me"
 template: "page"
 ---
 
-I'd like to tell you about a two year postdoc position to measure galaxy morphology in Euclid images using deep learning. You'd be working closely with myself, ESA data scientists, and experts in galaxy morphology.
+I'd like to tell you about a new postdoc opportunity; measuring galaxy morphology in Euclid images using deep learning.
 
 Key points
 
 - Starting Q4 2023 (flexible)
-- 2 year contract
+- 2 year postdoc contract
 - Salary approx. €40k EUR per year (approx. €30k EUR after tax)
 - Working alongside ESA's data scientists at [ESAC](https://en.wikipedia.org/wiki/European_Space_Astronomy_Centre) in Madrid, Spain
 - Specific travel funding to visit NASA's [Space Telescope Science Institute (STSci)](https://www.stsci.edu/) in Baltimore - and me in Toronto!
-- Application deadline TBD, but likely end-of-July
+- Application deadline July 31st
 
 The core science question is whether galaxies in dense cluster environments have different morphologies to those in field environments. We'd like to measure the morphology of cluster and field galaxies, see how they differ, and interpret what physics might be driving this difference.
 

@@ -12,7 +12,7 @@ Key points
 - Salary approx. €40k EUR per year (approx. €30k EUR after tax)
 - Working alongside ESA's data scientists at [ESAC](https://en.wikipedia.org/wiki/European_Space_Astronomy_Centre) in Madrid, Spain
 - Specific travel funding to visit NASA's [Space Telescope Science Institute (STSci)](https://www.stsci.edu/) in Baltimore - and me in Toronto!
-- Application deadline TBD, but likely end-of-July
+- Application deadline July 31st
 
 The core science question is whether galaxies in dense cluster environments have different morphologies to those in field environments. We'd like to measure the morphology of cluster and field galaxies, see how they differ, and interpret what physics might be driving this difference.
 
