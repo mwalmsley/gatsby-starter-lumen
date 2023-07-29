@@ -49,7 +49,7 @@ Please drop me a message if you have any questions about the project. Good luck!
 
 Mike
 
-<figure class="alignleft is-resized">
+<figure class="is-resized">
   <img src="https://cdn.sci.esa.int/documents/33220/35293/Euclid_artist_impression_20190916_1_625.jpg" alt="" class="wp-image-9572" width="456"/>
   <figcaption>Artist's impression of Euclid. Copyright: ESA/ATG medialab (spacecraft); NASA, ESA, CXC, C. Ma, H. Ebeling and E. Barrett (University of Hawaii/IfA), et al. and STScI (background)
   </figcaption>
