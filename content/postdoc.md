@@ -44,8 +44,13 @@ CAB are responsible for the hiring decision. My advice to them is to look for a 
 It goes without saying that CAB will welcome individuals from any background. One of my favourite things about being an astronomer is the diversity of the people I meet. And Madrid is lovely - I hope to visit you lots, especially during the Canadian winter!
 
 CAB's application system is in Spanish and not the most intuitive. To guide you through the process, begin applying by emailing J. Miguel Mas Hesse and cc. Jan Reerink (mm@cab.inta-csic.es, Jan.Reerink@esa.int). They will then help you make your application.
-<!-- TODO materials required -->
 
 Please drop me a message if you have any questions about the project. Good luck!
 
 Mike
+
+<figure class="alignleft is-resized">
+  <img src="https://cdn.sci.esa.int/documents/33220/35293/Euclid_artist_impression_20190916_1_625.jpg" alt="" class="wp-image-9572" width="456"/>
+  <figcaption>Artist's impression of Euclid. Copyright: ESA/ATG medialab (spacecraft); NASA, ESA, CXC, C. Ma, H. Ebeling and E. Barrett (University of Hawaii/IfA), et al. and STScI (background)
+  </figcaption>
+</figure>
