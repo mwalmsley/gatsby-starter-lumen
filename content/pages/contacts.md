@@ -5,7 +5,7 @@ socialImage: "/media/image-4.jpg"
 ---
 
 
-The best way to reach me is by [email](mailto:michael.walmsley@manchester.ac.uk). 
+The best way to reach me is by [email](mailto:m.walmsley@utoronto.ca). 
 
 I have many more ideas to try out and astronomy datasets to explore than I could ever deal with myself.
 Reach out if you're a prospective student or an established researcher looking for an ML challenge.

@@ -59,4 +59,4 @@ Making these two changes creates a model which substantially outperforms both di
 
 Historically, Galaxy Zoo has shared catalogs of vote counts for questions we hoped would be generally useful to many people. Choosing these questions is a compromise between scientific precision, broad applicability, and limited volunteer time. Now we no longer need to compromise. I believe Galaxy Zoo can shift towards **creating adaptable foundation models that you can use to answer exactly the questions you care about**.
 
-I'd love to test this on more than just ring galaxies. If you have a small expert-labelled dataset centered on a specific question, please reach out ([email](emailto:michael.walmsley@manchester.ac.uk), [twitter](https://www.twitter.com/mike_walmsley_)).
+I'd love to test this on more than just ring galaxies. If you have a small expert-labelled dataset centered on a specific question, please reach out ([email](emailto:m.walmsley@utoronto.ca), [twitter](https://www.twitter.com/mike_walmsley_)).

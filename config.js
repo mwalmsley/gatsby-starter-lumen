@@ -37,7 +37,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'I like solving interesting problems with data. Currently using deep learning to understand galaxy evolution.',
     contacts: {
-      email: 'michael.walmsley@manchester.ac.uk',
+      email: 'm.walmsley@utoronto.ca',
       facebook: '',
       telegram: '',
       twitter: 'mike_walmsley_',
