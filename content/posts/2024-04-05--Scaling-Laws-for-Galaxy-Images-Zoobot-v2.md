@@ -18,7 +18,7 @@ tags:
 
 ## Zoobot 2.0: Scaling Up
 
-> **Note:** This blog summarises the paper "Scaling Laws for Galaxy Images". Our pretrained foundation models are public as part of the [Zoobot 2.0](https://github.com/mwalmsley/zoobot) Python package. [Colab](https://colab.research.google.com/drive/1A_-M3Sz5maQmyfW2A7rEu-g_Zi0RMGz5?usp=sharing), [code](https://github.com/mwalmsley/zoobot), [docs](https://zoobot.readthedocs.io/en/latest/), [models](https://huggingface.co/collections/mwalmsley/zoobot-encoders-65fa14ae92911b173712b874), [embeddings](https://zoobot.readthedocs.io/en/latest/science_data.html#precalulated-representations).
+> This blog summarises the paper "Scaling Laws for Galaxy Images". Use our foundation models with the [Zoobot 2.0](https://github.com/mwalmsley/zoobot) Python package. [Colab](https://colab.research.google.com/drive/1A_-M3Sz5maQmyfW2A7rEu-g_Zi0RMGz5?usp=sharing), [code](https://github.com/mwalmsley/zoobot), [docs](https://zoobot.readthedocs.io/en/latest/), [models](https://huggingface.co/collections/mwalmsley/zoobot-encoders-65fa14ae92911b173712b874), [embeddings](https://zoobot.readthedocs.io/en/latest/science_data.html#precalulated-representations).
 
 
 All my best work has come from giving a talk, getting asked a good question, and replying with totally the wrong answer.
