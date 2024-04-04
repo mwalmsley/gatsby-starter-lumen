@@ -3,7 +3,7 @@ template: post
 title: Zoobot v2
 slug: zoobot-scaling-laws
 draft: False
-date: '2024-05-09T00:00:00.000Z'
+date: '2024-04-05T09:00:00.000Z'
 description: >-
     New foundation models for galaxy morphology
 category: research
@@ -28,39 +28,39 @@ Zoobot is designed to be adapted to new galaxy tasks with minimal new labels.
 I often call Zoobot a foundation model [^1].
 But after my talks, people often say: "Zoobot works, but it's not really a *foundation* model. It's too tiny! Foundation models should have billions of parameters. What happens if you make it bigger?"
 
-Like literally every AI researcher in the world, I enjoy training big models. Of course I tried making Zoobot bigger. I found it didn't help much, and left it at that. I might even go further and say
+Like literally every AI researcher in the world, I enjoy training big models. *Of course* I tried making Zoobot bigger. It didn't help much. I might even go further and say
 
 **"There is no evidence that bigger AI models work better in astronomy"**
 
-It's clear that big models do better when fueled by limitless labelled data (think billions of Instagram image/hashtags pairs, or web-scraped images with alt-text). But computer vision papers in astronomy work with thousands of labelled images, not billions.
-Even ImageNet, with 1.3M images, is about four times larger than the largest astronomy equivalent (GZ DESI). I think that's why there are no papers showing a convincing[^2] improvement from (for example) large vision transformer models in astronomy.
+It's clear that big models do better when fueled by limitless labelled data (think billions of web-scraped images with alt-text). But astronomers work with thousands of labelled images, not billions.
+Even ImageNet, with 1.3M images, is about four times larger than the largest astronomy equivalent (GZ DESI). I think that's why there are no astronomy papers showing a convincing[^2] improvement from (say) large vision transformers.
 
 But if data is the limiting factor - what if we scaled that as well?
 
 ## Pretraining Experiments
 
-I spent (insert silly amount of time here) pulling together a dataset of 800k+ galaxies with 100M+ Galaxy Zoo volunteer annotations. That's more than half of all human galaxy annotations ever collected. Then I trained models to predict the volunteer annotations. I systematically worked through every popular architecture (ConvNexT, EffNetV2, MaxViT, etc.) and every model size, from 1M to 200M parameters. I then I did it twice more for error bars.
+I spent (insert silly amount of time here) pulling together a dataset of 800k+ galaxies with 100M+ Galaxy Zoo volunteer annotations. That's more than half of all human galaxy annotations ever collected. Then I trained models to predict those annotations. I systematically worked through every popular architecture (ConvNexT, EffNetV2, MaxViT, etc.) and every model size, from 1M to 200M parameters. I then I did it twice more for error bars.
 
 Here's what I found.
 
 #### Adding data predictably improves performance for every model
 
 We expect that more labels help. What's interesting is that the amount of improvement for each label added is *totally predictable*.
-For every architecture and every model size, we see an almost-identical power law relationship between labels and performance.
+For every architecture, we see an almost-identical power law relationship between labels and performance.
 This means we can predict how much our models will improve as we add new labels.
 
 Each time we double the training data, we get the same improvement in performance. But we can't keep doubling training data; this paper used more than half of all the annotations ever collected. There's not much left to add!
 
 #### Bigger models do better, up to a point
 
-When we use a quarter of our dataset, training bigger models does almost no better; they just quickly overfit, as you'd expect. But our full dataset provides enough labelled galaxies to meaningfully train models up to around 100M parameters.
+When we use a quarter of our dataset, training bigger models does almost no better: they overfit. But our full dataset provides enough labelled galaxies to meaningfully train models up to around 100M parameters.
 Our best models (ConvNeXT-Base and MaxViT-Base) outperform the small (5M) EfficientNetB0 model used for GZ DECaLS and GZ DESI.
 
-Beyond around 100M parameters, we start quickly overfitting again. We could add some tricks like learning rate scheduling, aggressive regularization, etc., but it's clear that we can't scale indefinitely and expect better performance "for free".
+Beyond around 100M parameters, we start overfitting again. We could add some tricks like learning rate scheduling, aggressive regularization, etc., but it's clear that we can't scale indefinitely and expect better performance "for free".
 
 #### More data helps every task, but more parameters help only some tasks
 
-Because we're training to predict many different Galaxy Zoo questions (88 in total) we can measure performance for each question. Adding data improves performance on every question (remember the power law above? that applies to individual questions!) but adding parameters only helps for some questions (possibly the more subjectively challenging ones).
+We can measure performance separately for each of our Galaxy Zoo questions (88 in total). Adding data improves performance on every question. Remember the power law above? That applies to individual questions! But adding parameters only helps for some questions (possibly the more subjectively challenging ones).
 
 This is subtly different from the typical view that models are either data-limited or parameter-limited. Our models are data-limited for *all* questions and parameter-limited for *some* questions.
 
@@ -91,10 +91,10 @@ If you'd like to join in, reach out - [mike.walmsley@dunlap.utoronto.ca](emailto
 
 ---
 
-I'm grateful to Prof. Anna Scaife for believing in . It was a gamble and I'm glad it's paying off. I'm also grateful to the Dunlap Institute for continuing to support my work building these tools for the community and applying them to Euclid.
+I'm grateful to Prof. Anna Scaife for encouraging me in building Zoobot, even when it meant spending more time writing code than papers. It was a gamble and I'm glad it's paying off. I'm also grateful to the Dunlap Institute for continuing to support my work building these tools for the community and applying them to Euclid.
 
 ---
 
 [^1]: In the [first](https://arxiv.org/abs/2110.12735) Zoobot paper, I studiously avoided using the phrase `foundation model' because it was controversial at the time; some researchers felt it dangerously implied that AI models could be a solid foundation. Instead I just described what they are: "adaptable" models that "learn meaningful semantic representations of galaxies that are useful for new tasks on which the models were never trained".
 
-[^2]: Astroformer, Daglit 2023, recently trained a large Coatnet-like model (~300M params) on Galaxy10 DECaLS (27k images) and hit about 94% top-1 accuracy. That's much better than baselines with typical models, and about the same as another paper focused on using equivariance. I'm doubtful that the underlying Galaxy10 DECaLS labels are 94% accurate - but that's a topic for another blog.
+[^2]: With the possible exception of [Daglit 2023](https://arxiv.org/abs/2304.05350), who recently trained a large CoAtNet-like model (~300M params) on Galaxy10 DECaLS (27k images) and hit about 94% top-1 accuracy. That's much better than baselines with typical models, and about the same as [another paper](https://ui.adsabs.harvard.edu/abs/2023arXiv231101500P/abstract) focused on using equivariance (and small models). I'm doubtful that the underlying Galaxy10 DECaLS labels are 94% accurate - but that's a topic for another blog.
