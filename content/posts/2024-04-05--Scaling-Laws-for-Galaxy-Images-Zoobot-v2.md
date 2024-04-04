@@ -87,6 +87,8 @@ Alexander wept when there were no more hills to conquer, and I weep now I'm out 
 
 Self-supervised learning is an obvious choice. I and my collaborators have been experimenting with this for a couple of years (e.g. [here](https://arxiv.org/pdf/2110.12735.pdf), [here](https://academic.oup.com/mnras/article/514/2/2599/6575929)). Scientific foundation models are attracting [ever](https://polymathic-ai.org/blog/announcement/) [more](https://arxiv.org/abs/2306.00258) [interest](https://arxiv.org/abs/2309.06126) and are still in their infancy in astronomy. I'm excited to see what we build together.
 
+The other side of the coin is finetuning. We can now use the new labels Galaxy Zoo volunteers are [creating](www.galaxyzoo.org) to quickly build specialized models, including for difficult tasks like [segmentation](https://arxiv.org/abs/2312.02908). Every label is now more valuable, not less. What new questions might we answer?
+
 If you'd like to join in, reach out - [mike.walmsley@dunlap.utoronto.ca](emailto:mike.walmsley@dunlap.utoronto.ca). I'm also part of the [deepskies](https://deepskieslab.com/) and [universeTBD](https://universetbd.org/) open AI communities.
 
 ---
