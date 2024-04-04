@@ -91,7 +91,7 @@ If you'd like to join in, reach out - [mike.walmsley@dunlap.utoronto.ca](emailto
 
 ---
 
-I'm grateful to Prof. Anna Scaife for encouraging me in building Zoobot, even when it meant spending more time writing code than papers. It was a gamble and I'm glad it's paying off. I'm also grateful to the Dunlap Institute for continuing to support my work building these tools for the community and applying them to Euclid.
+I'm grateful to Prof. Anna Scaife for encouraging me in building Zoobot, even when it meant spending more time writing code than papers. It was a gamble and I'm glad it's paying off. I'm also grateful to the Dunlap Institute for continuing to support my work building these tools for the community and applying them to Euclid. Finally, I am, as ever, grateful to the Galaxy Zoo volunteers who make this all possible.
 
 ---
 
