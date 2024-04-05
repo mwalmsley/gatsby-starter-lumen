@@ -83,7 +83,7 @@ That suggests that if you want good performance on galaxy images, you should foc
 
 ## Where Next?
 
-Alexander wept when there were no more hills to conquer, and I weep now I'm out of human labels. Bigger models will require other techniques.
+Alexander wept when there were no more worlds to conquer, and I weep now I'm out of human labels. Bigger models will require other techniques.
 
 Self-supervised learning is an obvious choice. I and my collaborators have been experimenting with this for a couple of years (e.g. [here](https://arxiv.org/pdf/2110.12735.pdf), [here](https://academic.oup.com/mnras/article/514/2/2599/6575929)). Scientific foundation models are attracting [ever](https://polymathic-ai.org/blog/announcement/) [more](https://arxiv.org/abs/2306.00258) [interest](https://arxiv.org/abs/2309.06126) and are still in their infancy in astronomy. I'm excited to see what we build together.
 
