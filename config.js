@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://walmsley.dev',
   pathPrefix: '/',
   title: 'Mike Walmsley',
-  subtitle: 'Solving intersting problems with data',
+  subtitle: 'Solving interesting problems with data',
   copyright: '© Mike Walmsley All rights reserved.',
   disqusShortname: 'walmsley',
   postsPerPage: 6,
@@ -26,6 +26,10 @@ module.exports = {
     {
       label: 'Contact me',
       path: '/pages/contacts'
+    },
+    {
+      label: 'Postdoc ad',
+      path: '/pages/postdoc'
     }
   ],
   author: {
@@ -33,7 +37,7 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'I like solving interesting problems with data. Currently using deep learning to understand galaxy evolution.',
     contacts: {
-      email: 'michael.walmsley@manchester.ac.uk',
+      email: 'm.walmsley@utoronto.ca',
       facebook: '',
       telegram: '',
       twitter: 'mike_walmsley_',
